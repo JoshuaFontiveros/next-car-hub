@@ -1,12 +1,15 @@
-import { manufacturers } from './../constants/index';
-import { SearchManufacturer } from '@/components';
-import { MouseEventHandler } from 'react';
+import { manufacturers } from "./../constants/index";
+import { SearchManufacturer } from "@/components";
+import { MouseEventHandler } from "react";
 
 export interface CustomButtonProps {
   title: string;
   containerStyles?: string;
   handleClick?: MouseEventHandler<HTMLButtonElement>;
-  btnType?: 'button' | 'submit';
+  btnType?: "button" | "submit";
+  textStyles?: string;
+  rightIcon?: string;
+  isDisabled?: boolean;
 }
 
 export interface SearchManufacturerProps {
@@ -25,4 +28,16 @@ export interface CarProps {
   model: string;
   transmission: string;
   year: number;
+}
+
+export interface FilterProps {
+  manufacturer: string;
+  year: number;
+  fuel: string;
+  limit: number;
+  model: string;
+}
+
+export interface HomeProps {
+  searchParams: FilterProps;
 }

@@ -1,10 +1,9 @@
-import { FunctionComponent } from 'react';
-import { Navbar, Footer } from '@/components';
-import './globals.css';
+import { Navbar, Footer } from "@/components";
+import "./globals.css";
 
 export const metadata = {
-  title: 'Car Hub',
-  description: 'Discover the best cars in the world',
+  title: "Car Hub",
+  description: "Discover the best cars in the world",
 };
 
 export default function RootLayout({
